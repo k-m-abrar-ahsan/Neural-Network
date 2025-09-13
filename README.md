@@ -5,7 +5,7 @@
 
 This project implements a **Variational Autoencoder (VAE)** as a non-deterministic unsupervised neural network model for data generation, with comprehensive evaluation metrics and analysis.
 
-## 🎯 Objective
+##  Objective
 
 Design and implement a non-deterministic unsupervised neural network model that:
 - Uses stochastic sampling for better data space exploration
@@ -13,7 +13,7 @@ Design and implement a non-deterministic unsupervised neural network model that:
 - Generates high-quality samples
 - Includes comprehensive evaluation and analysis
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 425/
@@ -33,7 +33,7 @@ Design and implement a non-deterministic unsupervised neural network model that:
 └── README.md                    # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Environment Setup
 
@@ -73,7 +73,7 @@ python src/main_experiment.py --dataset synthetic --epochs 100 --latent-dim 5
 - **CIFAR-10**: Natural images (32x32 RGB images)
 - **Synthetic**: Generated 2D datasets (blobs, moons, circles)
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### Variational Autoencoder (VAE)
 
@@ -95,7 +95,7 @@ Loss = E_q(z|x)[log p(x|z)] - β × D_KL(q(z|x) || p(z))
 - **Flexible Architecture**: Configurable hidden layers and latent dimensions
 - **β-VAE Support**: Controllable disentanglement via β parameter
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 ### For Generative Models
 - **Fréchet Inception Distance (FID)**: Lower is better
@@ -118,7 +118,7 @@ Loss = E_q(z|x)[log p(x|z)] - β × D_KL(q(z|x) || p(z))
 - **Aleatoric Uncertainty**: Data uncertainty
 - **Generation Diversity**: Sample variety measures
 
-## 🎨 Visualizations
+##  Visualizations
 
 The project generates comprehensive visualizations:
 
@@ -129,7 +129,7 @@ The project generates comprehensive visualizations:
 5. **Interpolations**: Smooth transitions in latent space
 6. **Latent Dimensions**: Statistical analysis of learned representations
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Command Line Arguments
 
@@ -178,7 +178,7 @@ Create a JSON configuration file for advanced settings:
 }
 ```
 
-## 📈 Results and Analysis
+##  Results and Analysis
 
 After running an experiment, results are saved to:
 
@@ -190,7 +190,7 @@ After running an experiment, results are saved to:
 - `results/interpolations.png`: Latent space interpolations
 - `models/best_model.pth`: Best trained model checkpoint
 
-## 🔬 Advanced Usage
+##  Advanced Usage
 
 ### Custom Datasets
 
@@ -222,7 +222,7 @@ def custom_metric(self, data_loader):
     return metric_value
 ```
 
-## 🧪 Experiments and Comparisons
+##  Experiments and Comparisons
 
 ### Baseline Comparisons
 
@@ -247,7 +247,7 @@ python src/main_experiment.py --latent-dim 10
 python src/main_experiment.py --latent-dim 50
 ```
 
-## 📝 Report Generation
+##  Report Generation
 
 The project automatically generates:
 
@@ -257,7 +257,7 @@ The project automatically generates:
 4. **Uncertainty Analysis**: Epistemic vs aleatoric uncertainty
 5. **Failure Case Analysis**: Limitations and edge cases
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -285,7 +285,7 @@ The project automatically generates:
 - Use early stopping to prevent overfitting
 - Monitor training curves for convergence
 
-## 📚 Theoretical Background
+##  Theoretical Background
 
 ### Variational Autoencoders
 
@@ -308,7 +308,7 @@ Controls the trade-off between reconstruction and regularization:
 - β < 1: Emphasizes reconstruction
 - β > 1: Emphasizes disentanglement
 
-## 🤝 Contributing
+##  Contributing
 
 To contribute to this project:
 
@@ -322,14 +322,14 @@ To contribute to this project:
 
 This project is for educational purposes as part of the Neural Networks course assignment.
 
-## 📞 Support
+##  Support
 
 For questions or issues:
 1. Check the troubleshooting section
 2. Review the code documentation
 3. Create an issue with detailed description
 
-## 🎓 Academic References
+##  Academic References
 
 1. Kingma, D. P., & Welling, M. (2013). Auto-Encoding Variational Bayes. arXiv preprint arXiv:1312.6114.
 2. Higgins, I., et al. (2016). Beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework.
